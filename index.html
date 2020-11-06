@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tut2-hamburger</title>
+  <style rel="stylesheet">
+
+    body{
+      background: #fff;
+    }
+
+    .burgerContainer{
+      padding: 50px;
+      cursor: pointer;
+    }
+
+    .burgerIcon{
+      width: 100px;
+      height: 20px;
+      background-color: #444;
+      background: linear-gradient(
+        150deg,
+        rgb(67, 236, 24) 0%,
+        rgb(37, 233, 200) 100%
+      );
+      margin: 6px 0;
+      border-radius: 50px;
+      transition: 0.5s;
+    }
+
+    .burgerIcon:nth-of-type(1){
+      margin-left: 10px;
+    }
+
+    .burgerIcon:nth-of-type(2){
+      width: 120px;
+      height: 15px;
+    }
+
+    .burgerIcon:nth-of-type(3){
+      margin-left: 10px;
+    }
+
+    .burgerContainer:hover .burgerIcon:nth-of-type(1){
+      transform: translateY(22px) rotate(-45deg);
+      transition: 0.5s;
+    }
+
+    .burgerContainer:hover .burgerIcon:nth-of-type(2){
+      opacity: 0;
+      transform: scale(0.5) rotate(360deg);
+      transition: 0.5s;
+    }
+
+    .burgerContainer:hover .burgerIcon:nth-of-type(3){
+      transform: translateY(-23px) rotate(45deg);
+      transition: 0.5s;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="burgerContainer">
+    <div class="burgerIcon"></div>
+    <div class="burgerIcon"></div>
+    <div class="burgerIcon"></div>    
+  </div>
+  
+</body>
+</html>
